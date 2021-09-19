@@ -38,6 +38,8 @@ Pour créer une connexion entre Arduino et p5.js, vous aurez besoin de [**l'appl
 5. Une fois ouverte, retournez dans votre script p5.js et lancez le programme : un "0" s'affiche
 6. Avec votre doigt, appuyez sur le bouton de votre montage électronique : un "1" apparaît lorsque le bouton est pressé
 
+Maintenant, votre script p5.js reçoit tout ce que le code Arduino envoie sur le Serial (`Serial.print()`, `Serial.println()`) : vous pouvez ainsi recevoir toutes les données émises par les capteurs de votre montage.
+
 -----
 
 
