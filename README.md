@@ -13,6 +13,11 @@ p5.js est une librairie Javascript qui permet de générer des visuels à partir
 D'un côté, Arduino est capable de recevoir des données de capteurs physiques réels, et peut stimuler des moteurs et des actionneurs. De l'autre, p5.js peut générer des visuels et interagir avec une interface web. Donc en reliant p5.js à Arduino, on peut facilement piloter une interface avec des contrôleurs tangibles, et on peut piloter des éléments tangibles via une interface. Bref, le futur.
 
 
+
+-----
+
+
+
 ## Partie 1 : Arduino
 Assurez-vous que [**l'IDE Arduino**](https://www.arduino.cc/en/Main/Software) soit installé sur votre ordinateur.
 
@@ -23,11 +28,19 @@ Assurez-vous que [**l'IDE Arduino**](https://www.arduino.cc/en/Main/Software) so
 - [**Allumer ou éteindre une LED avec un bouton**](arduino/toggle-led-with-button)
 
 ## Partie 2 : Arduino + p5.js
-D'abord :
-- [**Téléchargez p5.serialcontrol**](https://github.com/p5-serial/p5.serialcontrol/releases/tag/0.1.2)
-- [**Ouvrez le code p5.js comme base**](https://editor.p5js.org/kevinvennitti/sketches/1NRTI6rhG) et dupliquez-le
+
+Pour créer une connexion entre Arduino et p5.js, vous aurez besoin de [**l'application p5.serialcontrol**](https://github.com/p5-serial/p5.serialcontrol/releases/tag/0.1.2).
+
+1. Téléversez un programme Arduino sur votre board via le logiciel Arduino ([**récupérer la valeur d'un bouton**](arduino/get-digital-value-of-button) par exemple), et fabriquez le montage associé
+2. [**Ouvrez le script p5.js comme base**](https://editor.p5js.org/kevinvennitti/sketches/1NRTI6rhG) et dupliquez-le
+3. Lancez le programme : l'écran affiche "Serial Port is Closed"
+4. Ouvrez l'application p5.serialcontrol
+5. Une fois ouverte, retournez dans votre script p5.js et lancez le programme : un "0" s'affiche
+6. Avec votre doigt, appuyez sur le bouton de votre montage électronique : un "1" apparaît lorsque le bouton est pressé
 
 -----
+
+
 
 
 **Pour approfondir :**
